@@ -8,5 +8,4 @@ fn main() {
     } else {
         println!("Greater");
     }
-
 }
