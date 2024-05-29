@@ -8,7 +8,6 @@ fn main() {
     let secret_number: u32 = rand::thread_rng().gen_range(1..=100);
 
     loop {
-
         println!("Please input your guess.");
 
         let mut guess = String::new();
@@ -30,7 +29,7 @@ fn main() {
             Ordering::Equal => {
                 println!("You win!");
                 break;
-            },
+            }
         }
     }
 }
