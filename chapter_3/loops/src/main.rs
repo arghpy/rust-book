@@ -12,7 +12,6 @@ fn main() {
     println!("Result: {counter}");
 
     // loop labels
-
     let mut remaining = 10;
 
     'my_label: loop {
@@ -56,4 +55,17 @@ fn main() {
     for number in (1..4).rev() {
         println!("Number: {number}");
     }
+
+
+    // use loop as it would be an expression
+    let mut x = 1;
+    let result = loop {
+        x += 1;
+
+        if x == 10 {
+            break x * 2
+        }
+    };
+
+    println!("result: {result}");
 }

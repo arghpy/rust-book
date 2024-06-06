@@ -5,7 +5,7 @@ fn raise_to_power(x: usize, power: i32) {
     for _ in 1..(power + 1) {
         result = result * x;
     }
-    println!("{x} to the power of {power}: {result}");
+    println!("{x} to the power of {power}: {result}")
 }
 
 fn five() -> i32 {
@@ -13,7 +13,7 @@ fn five() -> i32 {
 }
 
 fn plus_one(x: i32) -> i32 {
-    x + 1
+    return x + 1;
 }
 
 fn main() {
@@ -34,5 +34,5 @@ fn main() {
 
     let x = plus_one(five());
 
-    println!("X is {x}");
+    println!("x is {x}");
 }
